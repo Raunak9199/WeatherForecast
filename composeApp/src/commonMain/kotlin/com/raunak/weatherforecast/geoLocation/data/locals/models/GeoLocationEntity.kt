@@ -12,7 +12,7 @@ data class GeoLocationEntity(
     val longitude: Double,
     val countryName: String,
     val countryCode: String,
-    val countryId: String,
+    val countryId: Int,
     val timezone: String,
-    val elevation: Int
+    val elevation: Double
 )

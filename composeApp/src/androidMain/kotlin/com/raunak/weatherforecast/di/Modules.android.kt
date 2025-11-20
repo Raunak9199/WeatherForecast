@@ -10,5 +10,5 @@ import org.koin.dsl.module
 actual val platformModule: Module
     get() = module {
         single <HttpClientEngine> { OkHttp.create() }
-        single<DatabaseFactory> { DatabaseFactory(androidApplication()) }
+        single< DatabaseFactory> { DatabaseFactory(androidApplication()) }
     }

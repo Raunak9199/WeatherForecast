@@ -17,7 +17,7 @@ class GeoLocationMapper : Mapper<GeoLocation, GeoLocationEntity> {
                 countryCode,
                 countryId,
                 timezone,
-                elevation,
+                elevation.toDouble(),
                 flagUrl = K.flagUrl(countryCode)
             )
         }

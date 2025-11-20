@@ -63,9 +63,14 @@ kotlin {
             implementation(libs.koin.compose)
             implementation(libs.koin.compose.viewmodel)
             api(libs.koin.core)
+            implementation(compose.materialIconsExtended)
+
 
             implementation(libs.bundles.ktor)
             implementation(libs.bundles.coil)
+//            implementation(libs.material.icons.extended)
+//            implementation(libs.material.icons.core)
+//            implementation(compose.material)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)

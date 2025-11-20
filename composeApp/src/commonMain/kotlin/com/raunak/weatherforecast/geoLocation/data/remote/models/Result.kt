@@ -29,7 +29,7 @@ data class Result(
     @SerialName("country_id")
     val countryId: Int = 0,
     @SerialName("elevation")
-    val elevation: Int = 0,
+    val elevation: Double = 0.0,
     @SerialName("feature_code")
     val featureCode: String = "",
     @SerialName("id")

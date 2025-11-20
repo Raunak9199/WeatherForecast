@@ -1,4 +1,4 @@
-package com.raunak.weatherforecast.geoLocation.locals
+package com.raunak.weatherforecast.geoLocation.data.locals
 
 import androidx.room.RoomDatabase
 import com.raunak.weatherforecast.geoLocation.data.locals.GeolocationDatabase

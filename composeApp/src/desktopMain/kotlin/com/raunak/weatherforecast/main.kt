@@ -1,5 +1,7 @@
 package com.raunak.weatherforecast
 
+import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
+import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import com.raunak.weatherforecast.di.initKoin
@@ -13,6 +15,7 @@ import com.raunak.weatherforecast.di.initKoin
 //    }
 //}
 
+@OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
 fun main(){
     initKoin()
     application {
@@ -20,7 +23,8 @@ fun main(){
             onCloseRequest = ::exitApplication,
             title = "WeatherForecast",
         ) {
-            App()
+            val calculatedScreenSize = calculateWindowSizeClass()
+            App(calculatedScreenSize.widthSizeClass)
         }
     }
 }
